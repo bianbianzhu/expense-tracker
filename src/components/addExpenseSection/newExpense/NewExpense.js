@@ -10,6 +10,7 @@ const NewExpense = (props) => {
     date: '2021-01-02',
     amount: 0,
   });
+  //////////////
 
   const inputChangeHandler = (e) => {
     if (e.target.name === "name") {
