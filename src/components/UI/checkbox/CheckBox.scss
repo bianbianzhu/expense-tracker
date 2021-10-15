@@ -1,0 +1,37 @@
+@use '../../../scss/index' as *;
+input[type="checkbox"] {
+  position: relative;
+
+  display: none;
+
+  &:checked + .checkbox__box::before {
+    content: "✔";
+    background-color: green;
+  }
+}
+
+.checkbox__box {
+  width: 2.8rem;
+  height: 2.8rem;
+
+  margin: 0 2.5rem;
+
+  position: relative;
+  top: 50%;
+
+  display: flex;
+
+  &::before {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    font-size: 1.6rem;
+    font-weight: 600;
+    content: "";
+    position: absolute;
+    color: #fff;
+    inset: 0;
+    border: 0.2rem solid darken($color-border-primary, 5%);
+    border-radius: 0.5rem;
+  }
+}

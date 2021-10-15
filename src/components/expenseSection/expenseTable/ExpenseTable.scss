@@ -1,0 +1,30 @@
+@use '../../../scss/UI/btn/btn';
+@use '../../../scss/UI/dropdown/dropdown';
+@use '../../../scss/index' as *;
+
+.expense-table {
+   
+    color: $color-font-light;
+    text-transform: uppercase;
+ 
+
+   &__header-row {
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       width: 71%;
+       
+       margin-bottom: 3rem;
+
+
+
+       & > *:nth-child(2) {
+          margin-right: auto;
+        
+       }
+
+       & > *:nth-child(3) {
+           margin-right: auto;
+       }
+   }
+}

@@ -1,0 +1,8 @@
+@use './scss/index' as *;
+.App {
+  font-family: $font-default;
+  font-size: 1.6rem;
+  line-height: 1.6;
+  font-weight: 400;
+}
+

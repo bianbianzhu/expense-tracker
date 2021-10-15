@@ -1,0 +1,33 @@
+@use '../../../scss/index' as *;
+@use '../../../scss/UI/input/input';
+@use '../../../scss/UI/btn/btn';
+.new-expense {
+  color: $color-font-light;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 3rem 7.8rem;
+  display: flex;
+  align-items: center;
+  box-shadow: $shadow-primary-light;
+
+  & > form {
+    width: 100%;
+  }
+
+  & label {
+    margin-right: 2rem;
+  }
+
+  & input {
+    margin-right: 8rem;
+  }
+
+  &__actions {
+    text-align: end;
+    margin-top: 2rem;
+
+    & > button {
+      display: inline-block;
+    }
+  }
+}

@@ -1,0 +1,6 @@
+@use '../../../../scss/index' as *;
+.card-default {
+    border-radius: 1.2rem;
+    background-color: $color-primary;
+    box-shadow: $shadow-primary;
+}

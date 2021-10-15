@@ -1,0 +1,43 @@
+@use '../../index' as *;
+.btn {
+ //generally for the reset of format
+  border: none;
+  appearance: none;
+  outline: none;
+  background: none;
+  color: $color-icon-primary;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1;
+
+  cursor: pointer;
+
+    &--dots {
+
+     font-size: 3rem;
+     font-weight: 600;
+    }
+
+    &--icon {
+      font-size: 2rem;
+      
+      &:not(:last-of-type) {
+        margin-right: 2.5rem;
+      }
+
+      &:hover {
+        color: $color-highlight-primary;
+      }
+    }
+
+    &--add {
+      font-size: 3.2rem;
+ 
+      border-radius: 50%;
+      line-height: 0;
+ 
+      color: green;
+      box-shadow: 0 .3rem 1rem $color-font-light;
+    }
+}

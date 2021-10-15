@@ -1,0 +1,25 @@
+@use '../../scss/UI/btn/btn';
+
+.expense-section {
+    
+    margin: 5rem 0;
+    display: flex;
+    flex-direction: column;
+
+    &__nav {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     margin-bottom: 3.2rem;
+    }
+
+    &__title {
+        font-size: 2rem;
+    }
+
+    &__btn {
+       transform: translateY(-.3rem);
+    }
+
+
+}

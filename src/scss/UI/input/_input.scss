@@ -1,0 +1,21 @@
+@use '../../index' as *;
+.input {
+  //can give a reset
+
+  &--expense {
+    border: 0.3rem solid darken($color-border-primary, 5%);
+    border-radius: 0.6rem;
+    outline: none;
+
+    color: $color-font-light;
+
+   font: inherit; //pass the font default to the input
+
+    padding: 1rem;
+
+    
+
+    &:focus {
+    }
+  }
+}

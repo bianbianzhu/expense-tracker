@@ -1,0 +1,63 @@
+@use '../../../../scss/index' as *;
+@use '../../../../scss/UI/btn/btn';
+.expenseTable-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  border: 0.3rem solid $color-border-primary;
+  border-radius: 1.2rem;
+  box-shadow: $shadow-secondary;
+  padding: 1.6rem 2rem 1.6rem 0;
+
+  &:not(:last-of-type) {
+    margin-bottom: 0.5rem;
+  }
+
+  &__name {
+    flex: 1;
+    margin-right: auto;
+  }
+
+  &__date {
+    flex: 0 0 27%; // date + amount = 35% flex-basis
+  }
+
+  &__amount {
+    flex: 0 0 8%;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.5rem;
+
+    &::before {
+      content: "$";
+      display: inline-block;
+      width: 2.2rem;
+      height: 2.2rem;
+      background-color: $color-icon-primary;
+      color: $color-primary;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      border-radius: 50%;
+    }
+
+    &:hover::before {
+      background-color: gold;
+    }
+  }
+
+  &__actions-wrapper {
+    flex: 0 0 27%;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__actions {
+    display: flex;
+  }
+}
